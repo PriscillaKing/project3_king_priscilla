@@ -1,0 +1,20 @@
+/*=======================================
+
+  Universal Styling
+
+========================================*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-sizing: border-box;
+}
+
+
+h1 a {
+  text-decoration: none;
+}
+
+ul a {
+  text-decoration: none;
+}
