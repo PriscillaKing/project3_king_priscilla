@@ -15,7 +15,9 @@ body {
   font-size: 16px;
 }
 
-
+html {
+    overflow: hidden;
+}
 
 /*=======================================
 
@@ -26,6 +28,7 @@ body {
 .container {
   background-color: #8A9AAF;
   padding: 43px;
+  border-bottom: 7px solid #434548;
 }
 
 h1 a {
@@ -91,6 +94,19 @@ h1 a {
 ========================================*/
 
 .triptych {
-max-block-size: 600px;
-padding: 50px;
+  max-block-size: 625px;
+  padding: 25px 50px 18px;
+}
+
+.hero_image {
+position: relative;
+left: 2%;
+}
+
+.caption {
+position: absolute;
+color: #434548;
+font-size: 16px;
+bottom: 20px;
+right: 5.8%;
 }
