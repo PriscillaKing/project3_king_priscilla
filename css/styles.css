@@ -19,6 +19,11 @@ html {
     overflow: hidden;
 }
 
+h1 {
+    font-family: 'Caveat', cursive;
+    color: #8A9AAF;
+}
+
 /*=======================================
 
   Navigation Bar Styling
