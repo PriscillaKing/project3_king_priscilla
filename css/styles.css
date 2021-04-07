@@ -22,8 +22,9 @@ h1 {
 }
 
 html{
-  overflow(x): hidden;
+  overflow-x: hidden;
 }
+
 
 /*=======================================
 
@@ -40,17 +41,16 @@ h1 a {
   font-family: 'Caveat' , cursive;
   font-size: 64px;
   position: absolute;
-  vertical-align: top;
   color: #fff;
-  top: 4px;
-  left: 3%;
+  top: 0px;
+  left: 7%;
 }
 
 .menu {
   list-style: none;
   background: #8A9AAF;
   max-width: 100%;
-  padding: 35px;
+  padding: 32px;
 }
 
 .menu > ul > li {
@@ -58,7 +58,7 @@ h1 a {
   background: #8A9AAF;
   text-align: center;
   position: relative;
-  left: 850px;
+  left: 827px;
   top: 17px;
   font-size: 18px;
   text-underline-position: white;
@@ -92,27 +92,71 @@ h1 a {
 
 /*=======================================
 
+  Footer Styling
+
+========================================*/
+
+.social_media {
+  background: #E4E4E4;
+  padding: 1px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+.icons {
+  color: #708198;
+  font-size: 36px;
+  position: relative;
+  display: inline;
+  left: 45%;
+}
+
+.icons:visited {
+  color:#708198;
+}
+
+.fab, .far {
+    font-weight: 400;
+    padding: 0px 25px;
+}
+
+
+
+/*=======================================
+
   Home Page Styling
 
 ========================================*/
 
 .triptych {
-  max-block-size: 625px;
+  max-block-size: 595px;
   padding: 25px 50px 18px;
 }
 
 .hero_image {
 position: relative;
-left: 2%;
+left: 4%;
 }
 
 .caption {
 position: absolute;
 color: #434548;
-font-size: 16px;
-bottom: 20px;
-right: 5.8%;
+font-size: 14px;
+bottom: 56px;
+right: 7.6%;
 }
+
+
+/*=======================================
+
+  About Page Styling
+
+========================================*/
+
+
+
+
 
 /*=======================================
 
