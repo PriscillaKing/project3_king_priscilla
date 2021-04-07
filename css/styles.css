@@ -18,10 +18,11 @@ body {
 h1 {
     font-family: 'Caveat', cursive;
     color: #8A9AAF;
+    font-size: 36px;
 }
 
 html{
-  overflow: hidden;
+  overflow(x): hidden;
 }
 
 /*=======================================
@@ -111,4 +112,56 @@ color: #434548;
 font-size: 16px;
 bottom: 20px;
 right: 5.8%;
+}
+
+/*=======================================
+
+  Contact Form Styling
+
+========================================*/
+
+
+.contact-form {
+  max-width: 500px;
+}
+
+
+.submit input {
+    background: #8A9AAF;
+    color: rgb(255,255,255, 0.65);
+    font-family: Montserrat semibold, sans-serif;
+    padding: 5px 100px;
+    border-radius: 45px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.input-section {
+  margin: 10px;
+  border: 1px solid #2B2B2B;
+  border-radius: 4px;
+}
+
+#name {
+  font-size: 18px;
+  font-family: Montserrat light, sans-serif;
+  text-transform: uppercase;
+  color: rgb(136, 148, 165, 0.5);
+  padding: 2px 15px;
+}
+
+#email {
+  font-size: 18px;
+  font-family: Montserrat light, sans-serif;
+  text-transform: uppercase;
+  color: rgb(136, 148, 165, 0.5);
+  padding: 2px 15px;
+}
+
+#message {
+  font-size: 18px;
+  font-family: Montserrat light, sans-serif;
+  text-transform: uppercase;
+  color: rgb(136, 148, 165, 0.5);
+  padding: 2px 15px;
 }
