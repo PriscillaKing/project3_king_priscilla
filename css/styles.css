@@ -34,6 +34,9 @@ html{
 
 header {
   border-bottom: 7px solid #434548;
+  background: #8A9AAF;
+  max-width: 100%;
+  padding: 40px;
 }
 
 h1 a {
@@ -42,37 +45,49 @@ h1 a {
   font-size: 64px;
   position: absolute;
   color: #fff;
-  top: 0px;
+  top: 10px;
   left: 7%;
 }
 
-.menu {
-  list-style: none;
-  background: #8A9AAF;
-  max-width: 100%;
-  padding: 32px;
-}
 
-.menu > ul > li {
+.menu-nav > ul > li {
   display: inline-block;
-  background: #8A9AAF;
   text-align: center;
-  position: relative;
-  left: 827px;
-  top: 17px;
   font-size: 18px;
-  text-underline-position: white;
+  list-style: none;
+  padding: 0px 76px;
 }
 
-.menu ul li a {
+.menu-nav ul li a {
   color: white;
   display: block;
   text-decoration: none;
+  position: absolute;
+  width: 170px;
+}
+
+.menu-nav ul {
+  position: relative;
+}
+
+
+.menu-nav {
+position: relative;
+left: 715px;
 }
 
 .menu-item {
   background: #8A9AAF;
-  padding: 0px 32px;
+  list-style: none;
+  display: inline-block;
+}
+
+.menu-nav > ul > li > a:hover {
+  font-weight: bold;
+  text-decoration: underline overline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+
 }
 
 .sub-menu {
@@ -82,11 +97,7 @@ h1 a {
   display: block;
 }
 
-.menu > ul > li > a:hover {
-  font-weight: bold;
-  text-decoration: underline overline;
 
-}
 
 
 
@@ -102,6 +113,7 @@ h1 a {
   width: 100%;
   position: fixed;
   bottom: 0px;
+  text-align: center;
 }
 
 .icons {
@@ -109,18 +121,19 @@ h1 a {
   font-size: 36px;
   position: relative;
   display: inline;
-  left: 45%;
 }
 
-.icons:visited {
-  color:#708198;
-}
 
 .fab, .far {
     font-weight: 400;
     padding: 0px 25px;
+    color: #708198;
 }
 
+.fa, .fas {
+    font-weight: 900;
+    color: #708198;
+}
 
 
 /*=======================================
