@@ -148,18 +148,44 @@ left: 715px;
 }
 
 .hero_image {
-position: relative;
-left: 4%;
+  position: relative;
+  left: 4%;
 }
 
 .caption {
-position: absolute;
-color: #434548;
-font-size: 14px;
-bottom: 56px;
-right: 7.6%;
+  position: absolute;
+  color: #434548;
+  font-size: 14px;
+  bottom: 56px;
+  right: 7.6%;
 }
 
+/*=======================================
+
+  Show Page Styling
+
+========================================*/
+
+.show_intro {
+  position: relative;
+  display: inline-block;
+}
+
+#show_hero {
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+.show_intro p {
+  margin: 35px 99px;
+  line-height: 2;
+}
+
+.show_intro h1 {
+  text-align: center;
+}
 
 /*=======================================
 
