@@ -17,9 +17,9 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <h1><a href="index.html">Priscilla King</a></h1>
-        <nav class="menu">
+      <nav class="menu">
+      <h1><a href="index.html">Priscilla King</a></h1>
+      <div class="menu-nav">
           <ul>
             <li class="menu-item"><a href="index.html">Home</a></li>
             <li class="menu-item"><a href="#">Gallery</a></li>
@@ -30,33 +30,17 @@
             <li class="menu-item"><a href="about.html">Behind the Art</a></li>
             <li class="menu-item"><a href="contact.html">Contact</a></li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
 
-    <section class"contact_background">
-      <img src="images/supplies.jpg" alt="Art Supplies" width="1400"/>
-    </section>
+    <div class="birch">
+      <img src="images/birch.jpg" alt="Winter Birch" width="500"/>
+      <p>Winter Birch<br>24" x 24"</p>
+    </div>
 
-    <section class="commission">
-      <h1>Comissions</h1>
-      <div class="circles">
-        <h2>Starting Prices</h2>
-        <h3>Small</h3>
-        <p>Size and Price</p>
-        <h3>Medium</h3>
-        <p>Size and Price</p>
-        <h3>Large</h3>
-        <p>Size and Price</p>
-      </div>
-      <p>*Prices vary on size, medium, and subject matter.</p>
-    </section>
-
-
-</form>
-
-    <section class="contact">
-      <h1>Contact Me</h1>
+    <section class="message-form">
+      <h2>Contact Me</h2>
 
       <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
 
@@ -71,8 +55,7 @@
         </div>
 
         <div class="message input-section">
-          <textarea name="req_message" id="message" cols="24" rows="15" placeholder="Message">
-          </textarea>
+          <textarea name="req_message" id="message" cols="24" rows="15" placeholder="Message"></textarea>
         </div>
 
         <div class="submit">
