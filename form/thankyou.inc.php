@@ -150,7 +150,7 @@ left: 715px;
 }
 
 .container p {
-  font-size: 24px;
+  font-size: 21px;
   margin: 20px;
   line-height: 2;
 }

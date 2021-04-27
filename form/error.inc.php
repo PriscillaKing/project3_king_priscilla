@@ -1,73 +1,97 @@
 <style type="text/css">
-  *{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: Montserrat,sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 
-  }
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
 
-  /*=======================================
+h1 {
+    font-family: 'Caveat', cursive;
+    color: #8A9AAF;
+    font-size: 36px;
+}
 
-    Navigation Bar Styling
+html{
+  overflow-x: hidden;
+}
 
-  ========================================*/
 
-  header {
-    border-bottom: 7px solid #434548;
-  }
+/*=======================================
 
-  h1 a {
-    text-decoration: none;
-    font-family: 'Caveat' , cursive;
-    font-size: 64px;
-    position: absolute;
-    color: #fff;
-    top: 0px;
-    left: 7%;
-  }
+  Navigation Bar Styling
 
-  .menu {
-    list-style: none;
-    background: #8A9AAF;
-    max-width: 100%;
-    padding: 32px;
-  }
+========================================*/
 
-  .menu > ul > li {
-    display: inline-block;
-    background: #8A9AAF;
-    text-align: center;
-    position: relative;
-    left: 827px;
-    top: 17px;
-    font-size: 18px;
-    text-underline-position: white;
-  }
+header {
+  border-bottom: 7px solid #434548;
+  background: #8A9AAF;
+  max-width: 100%;
+  padding: 40px;
+}
 
-  .menu ul li a {
-    color: white;
-    display: block;
-    text-decoration: none;
-  }
+h1 a {
+  text-decoration: none;
+  font-family: 'Caveat' , cursive;
+  font-size: 64px;
+  position: absolute;
+  color: #fff;
+  top: 10px;
+  left: 7%;
+}
 
-  .menu-item {
-    background: #8A9AAF;
-    padding: 0px 32px;
-  }
 
-  .sub-menu {
-    display: none;
-  }
-  .menu-item:hover .sub-menu {
-    display: block;
-  }
+.menu-nav > ul > li {
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  list-style: none;
+  padding: 0px 76px;
+}
 
-  .menu > ul > li > a:hover {
-    font-weight: bold;
-    text-decoration: underline overline;
+.menu-nav ul li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  width: 170px;
+}
 
-  }
+.menu-nav ul {
+  position: relative;
+}
+
+
+.menu-nav {
+position: relative;
+left: 715px;
+}
+
+.menu-item {
+  background: #8A9AAF;
+  list-style: none;
+  display: inline-block;
+}
+
+.menu-nav > ul > li > a:hover {
+  font-weight: bold;
+  text-decoration: underline overline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+
+}
+
+.sub-menu {
+  display: none;
+}
+.menu-item:hover .sub-menu {
+  display: block;
+}
 
 
 /*=======================================
@@ -82,6 +106,7 @@
   width: 100%;
   position: fixed;
   bottom: 0px;
+  text-align: center;
 }
 
 .icons {
@@ -89,16 +114,18 @@
   font-size: 36px;
   position: relative;
   display: inline;
-  left: 45%;
 }
 
-.icons:visited {
-  color:#708198;
-}
 
 .fab, .far {
     font-weight: 400;
     padding: 0px 25px;
+    color: #708198;
+}
+
+.fa, .fas {
+    font-weight: 900;
+    color: #708198;
 }
 
 /*===============================
@@ -109,29 +136,36 @@
 
 *===============================*/
 
-.container h1 {
+.container {
   text-align: center;
-  font-family: 'Caveat', cursive;
-  font-size: 36px;
-  color: #333;
-  padding: 25px;
+  margin: 50px;
+}
+
+.container h1 {
+  font-size: 64px;
+  padding-bottom: 25px;
 }
 
 .container p {
-  text-align: center;
-  color: #759da5;
-  padding: 5px;
+  font-size: 21px;
+  margin: 14px;
+  line-height: 2;
+}
+
+.container img {
+  position: relative;
+  margin: 20px;
 }
 
 .container ul {
   text-align: center;
   font-weight: bold;
   padding: 15px;
-  color: #333;
+  color: #434548;
 }
 
 ::marker {
-  color: #c5d16f;
+  color: #8A9AAF;
 }
 
 .container li {
@@ -140,22 +174,21 @@
 }
 
 .container a {
-  color: whitesmoke;
+  color: rgb(255,255,255, 0.65);
   text-decoration: none;
-  background: #759da5;
+  background: #8A9AAF;
   font-weight: bold;
   padding: 1px 8px;
   border-radius: 4px;
   font-variant: small-caps;
-}
-
-.container ul::first-letter{
-  font-size: 20px;
+  transition: .3s;
 }
 
 .container a:hover {
-  font-style: italic;
-
+  background: #B3BECB;
+  color: #FFFFFF;
+  transition: .3s;
+  cursor: pointer;
 }
 
 </style>
@@ -163,9 +196,9 @@
 <script src="https://kit.fontawesome.com/47b21c5749.js" crossorigin="anonymous"></script>
 
 <header>
-  <div class="container">
-    <h1><a href="index.html">Priscilla King</a></h1>
-    <nav class="menu">
+  <nav class="menu">
+  <h1><a href="index.html">Priscilla King</a></h1>
+  <div class="menu-nav">
       <ul>
         <li class="menu-item"><a href="index.html">Home</a></li>
         <li class="menu-item"><a href="#">Gallery</a></li>
@@ -176,13 +209,13 @@
         <li class="menu-item"><a href="about.html">Behind the Art</a></li>
         <li class="menu-item"><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
 
 
 <div class="container">
-	<h1>Missing fields</h1>
+	<h1>Missing Fields</h1>
 	<p>Sorry, you have not completed all of the required fields.</p>
 	<p>Please hit <a href="#" onClick="history.go(-1)">back</a> and complete the following required fields.</p>
 
@@ -195,6 +228,8 @@
 	</ul>
 
 	<p><strong><a href="#" onClick="history.go(-1)">Back to form</a></strong></p>
+
+  <img src="../images/signature_g.png" alt="PK signature" height="80"/>
 </div>
 
 <footer>
