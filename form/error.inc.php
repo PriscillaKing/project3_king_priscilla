@@ -101,9 +101,66 @@
     padding: 0px 25px;
 }
 
+/*===============================
+
+
+  Error Styling
+
+
+*===============================*/
+
+.container h1 {
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 36px;
+  color: #333;
+  padding: 25px;
+}
+
+.container p {
+  text-align: center;
+  color: #759da5;
+  padding: 5px;
+}
+
+.container ul {
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+  color: #333;
+}
+
+::marker {
+  color: #c5d16f;
+}
+
+.container li {
+  padding: 5px;
+  font-size: 18px;
+}
+
+.container a {
+  color: whitesmoke;
+  text-decoration: none;
+  background: #759da5;
+  font-weight: bold;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-variant: small-caps;
+}
+
+.container ul::first-letter{
+  font-size: 20px;
+}
+
+.container a:hover {
+  font-style: italic;
+
+}
+
 </style>
 
-
+<script src="https://kit.fontawesome.com/47b21c5749.js" crossorigin="anonymous"></script>
 
 <header>
   <div class="container">
