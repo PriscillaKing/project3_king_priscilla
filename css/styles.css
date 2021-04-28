@@ -195,8 +195,35 @@ html{
   font-weight: lighter;
 }
 
-.row {
+.main-gallery img {
+  max-width: 450px;
+}
+
+
+.column-l, .column-c, .column-r {
+  padding: 5px;
+  position: absolute;
+  padding-bottom: 65px;
+  display: block;
+}
+
+.column-l img, .column-c img, .column-r img {
   position: relative;
+  display: block;
+  padding:5px 0px;
+}
+
+.column-l {
+    left: 68px;
+}
+
+.column-c {
+  left: 530px;
+}
+
+.column-r {
+
+  right: 68px;
 }
 
 /*=======================================
