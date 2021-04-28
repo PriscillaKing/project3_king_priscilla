@@ -228,6 +228,20 @@ html{
 
 /*=======================================
 
+  Light Box Styling
+
+========================================*/
+
+  .lb-data .lb-caption span {
+  font-size: 18px;
+  line-height: 1.8;
+  color: whitesmoke;
+  font-variant: petite-caps;
+  }
+
+
+/*=======================================
+
   Show Page Styling
 
 ========================================*/
