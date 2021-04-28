@@ -193,6 +193,7 @@ html{
 .main-gallery h1 {
   font-size: 64px;
   font-weight: lighter;
+  margin: 30px 0px;
 }
 
 .main-gallery img {
@@ -226,6 +227,7 @@ html{
   right: 68px;
 }
 
+
 /*=======================================
 
   Light Box Styling
@@ -233,10 +235,10 @@ html{
 ========================================*/
 
   .lb-data .lb-caption span {
-  font-size: 18px;
-  line-height: 1.8;
-  color: whitesmoke;
-  font-variant: petite-caps;
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+  color: whitesmoke !important;
+  font-variant: petite-caps !important;
   }
 
 
@@ -265,6 +267,11 @@ html{
 
 .show_intro h1 {
   text-align: center;
+}
+
+.show_images > ul > li:nth-child(odd) {
+  position: relative;
+  left: 500px;
 }
 
 /*=======================================

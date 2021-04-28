@@ -4,15 +4,23 @@
     <meta charset="utf-8">
     <title>Priscilla King Art</title>
 
+    <!--css-->
+    <link href="../lightbox/src/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/styles.css">
 
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
+    <!--Icons-->
     <script src="https://kit.fontawesome.com/47b21c5749.js" crossorigin="anonymous"></script>
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   </head>
   <body>
     <header>
@@ -39,7 +47,7 @@
 
     <main>
       <div class="show_intro">
-        <img id="show_hero" src="../images/cypress.jpg" alt="Restoration" title="Restoration" width="700">
+        <a href="../images/cypress.jpg" data-lightbox="image-1" data-title="<span>Restoration</span><br>Oil on Wood<br>36&rdquo; x 48&rdquo;"><img id="show_hero" src="../images/cypress.jpg" alt="Restoration" title="Restoration" width="700"></a>
         <p>Restoration<br>36" x 48"</p>
         <h1>Nostalgia</h1>
         <p>This collection was inspired by my many camping trips to Carpinteria, CA. I was curious about nostalgia and the effect of memories and familiarity upon my art. To convey the  fickle nature of memories and feelings of nostalgia, the artwork has a looser painting style with some elements playfully askew.
@@ -50,26 +58,61 @@
 
 
       <section class="show_gallery">
-        <img src="../images/rincon.jpg" alt="California Classic" title="California Classic" width="500">
-        <p>California Classic<br>24" x 24"</p>
-        <img src="../images/steadfast.jpg" alt="Steadfast" title="Steadfast" height="500">
-        <p>Steadfast<br>24" x 36"</p>
-        <img src="../images/sandpiper.jpg" alt="Morning Walk" title="Morning Walk" width="250">
-        <p>Morning Walk<br>12" x 12"</p>
-        <img src="../images/lifegaurd.jpg" alt="Day Off" title="Day Off" width="250">
-        <p>Day Off<br>12" x 12"</p>
-        <img src="../images/thespot.jpg" alt="The Spot" title="The Spot" width="500">
-        <p>The Spot<br>16" x 24"</p>
-        <img src="../turbulent" alt="Turbulent" title="Turbulent" width="250">
-        <p>Turbulent<br>12" x 12"</p>
-        <img src="../images/candyshop.jpg" alt="Robataille's" title="Robataille's" width="500">
-        <p>Robataille's<br>16" x 24"</p>
-        <img src="../images/cruise.jpg" alt="Cruisin'" title="Cruisin'" width="500">
-        <p>Cruisin'<br>24" x 24"</p>
-        <img src="../images/eventide.jpg" alt="Eventide" title="Eventide" height="500">
-        <p>Eventide<br>24" x 42"</p>
-        <img src="../images/surfer.jpg" alt="Local Therapy" title="Local Therapy" width="250">
-        <p>Local Therapy<br>12" x 12"</p>
+        <figure>
+          <a href="../images/rincon.jpg" data-lightbox="image-1" data-title="<span>California Classic</span><br>Oil on Wood<br>24&rdquo; x 24&rdquo;"><img src="../images/rincon.jpg" alt="California Classic" title="California Classic" width="500"></a>
+          <figcaption>California Classic<br>24" x 24"</figcaption>
+        </figure>
+
+        <figure>
+          <a href="../images/steadfast.jpg" data-lightbox="image-1" data-title="<span>Steadfast</span><br>Oil on Wood<br>24&rdquo; x 36&rdquo; <br>Sold"><img src="../images/steadfast.jpg" alt="Steadfast" title="Steadfast" height="500"></a>
+          <figcaption>Steadfast<br>24" x 36"</figcaption>
+        </figure>
+
+        <figure>
+          <a href="../images/sandpiper.jpg" data-lightbox="image-1" data-title="<span>Morning Walk</span><br>Oil on Wood<br>12&rdquo; x 12&rdquo;"><img src="../images/sandpiper.jpg" alt="Morning Walk" title="Morning Walk" width="250"></a>
+          <figcaption>Morning Walk<br>12" x 12"</figcaption>
+        </figure>
+
+        <figure>
+          <a href="../images/lifegaurd.jpg" data-lightbox="image-1" data-title="<span>Day Off</span><br>Oil on Wood<br>12&rdquo; x 12&rdquo;"><img src="../images/lifegaurd.jpg" alt="Day Off" title="Day Off" width="250"></a>
+          <figcaption>Day Off<br>12" x 12"</figcaption>
+        </figure>
+
+        <figure>
+          <a href="../images/thespot.jpg" data-lightbox="image-1" data-title="<span>The Spot</span><br>Oil on Wood<br>16&rdquo; x 24&rdquo;"><img src="../images/thespot.jpg" alt="The Spot" title="The Spot" width="500"></a>
+          <figcaption>The Spot<br>16" x 24"</figcaption>
+        </figure>
+
+        <figure>
+            <a href="../images/turbulent.jpg" data-lightbox="image-1" data-title="<span>Turbulent</span><br>Oil on Wood<br>12&rdquo; x 12&rdquo;"><img src="../turbulent" alt="Turbulent" title="Turbulent" width="250"></a>
+            <figcaption>Turbulent<br>12" x 12"</figcaption>
+        </figure>
+
+        <figure>
+          <a href="../images/candyshop.jpg" data-lightbox="image-1" data-title="<span>Robataille&apos;s</span><br>Oil on Wood<br>16&rdquo; x 24&rdquo;"><img src="../images/candyshop.jpg" alt="Robataille&apos;s" title="Robataille&apos;s" width="500"></a>
+          <figcaption>Robataille&apos;s<br>16" x 24"</figcaption>
+        </figure>
+
+        <figure>
+          <a href="../images/cruise.jpg" data-lightbox="image-1" data-title="<span>Cruisin&apos;</span><br>Oil on Wood<br>24&rdquo; x 24&rdquo;"><img src="../images/cruise.jpg" alt="Cruisin&apos;" title="Cruisin&apos;" width="500"></a>
+          <figcaption>Cruisin&apos;<br>24" x 24"</figcaption>
+        </figure>
+
+        <figure>
+          <a href="../images/eventide.jpg" data-lightbox="image-1" data-title="<span>Eventide</span><br>Oil on Wood<br>24&rdquo; x 42&rdquo; <br>Sold"><img src="../images/eventide.jpg" alt="Eventide" title="Eventide" height="500"></a>
+          <figcaption>Eventide<br>24" x 42"</figcaption>
+        </figure>
+
+        <figure>
+          <a href="../images/surfer.jpg" data-lightbox="image-1" data-title="<span>Local Therapy</span><br>Oil on Wood<br>12&rdquo; x 12&rdquo; <br>Private Collection"><img src="../images/surfer.jpg" alt="Local Therapy" title="Local Therapy" width="250"></a>
+          <figcaption>Local Therapy<br>12" x 12"</figcaption>
+        </figure>
+
+        <figure>
+          <a href="../images/triptych.jpg" data-lightbox="image-1" data-title="<span>Day In, Day Out</span><br>Oil on Wood<br>48&rdquo; X 24&rdquo;, 48&rdquo; X 48&rdquo;, 48&rdquo; X 24&rdquo;<br>Private Collection"><img src="../images/triptych.jpg" alt="Day In, Day Out" title="Day In, Day Out" height="600px"></a>
+          <figcaption>Day In, Day Out<br>48&rdquo; X 24&rdquo;, 48&rdquo; X 48&rdquo;, 48&rdquo</figcaption>
+        </figure>
+
       </section>
       <section class="show_card">
         <h2>Nostalgia</h2>
@@ -87,6 +130,8 @@
         </span>
       </div>
   </footer>
-  </body>
 
+  <script src="../lightbox/dist/js/lightbox-plus-jquery.js"></script>
+
+  </body>
 </html>
