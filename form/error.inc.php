@@ -27,73 +27,117 @@ html{
   Navigation Bar Styling
 
 ========================================*/
-
-header {
-  border-bottom: 7px solid #434548;
-  background: #8A9AAF;
-  max-width: 100%;
-  padding: 40px;
+.navbar {
+  overflow: hidden;
+  background-color: #8A9AAF;
+  height: 100px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
-h1 a {
-  text-decoration: none;
-  font-family: 'Caveat' , cursive;
-  font-size: 64px;
-  position: absolute;
-  color: #fff;
-  top: 10px;
-  left: 7%;
-}
-
-
-.menu-nav > ul > li {
-  display: inline-block;
-  text-align: center;
+.menu a {
+  float: right;
   font-size: 18px;
-  list-style: none;
-  padding: 0px 76px;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: .3s;
 }
 
-.menu-nav ul li a {
+.menu {
+  position: absolute;
+  right: 100px;
+  top: 37px;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;
+  border: none;
+  outline: none;
   color: white;
+  padding: 14px 41px 14px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  transition: .3s;
+}
+
+.menu a:hover, .dropdown:hover .dropbtn {
+  background: #B3BECB;
+  transition: .3s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8A9AAF;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
+  text-align: center;
+  transition: .3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #B3BECB;
+  border-radius: 4px;
+  transition: .3s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation-name: easedown;
+  animation-duration: .7s;
+  transform-origin: top;
+}
+
+#logo {
+  font-family: Caveat, cursive;
+  font-size: 64px;
+  color: white;
   text-decoration: none;
   position: absolute;
-  width: 170px;
+  top: 5px;
+  left: 100px;
 }
 
-.menu-nav ul {
-  position: relative;
+/*=======================================
+
+  Dropdown Menu Animation
+
+========================================*/
+
+@keyframes easedown {
+
+  0% {
+
+    transform: scaleY(0)
+
+  }
+
+
+  100% {
+
+    transform: scaleY(1)
+
+  }
+
 }
-
-
-.menu-nav {
-position: relative;
-left: 715px;
-}
-
-.menu-item {
-  background: #8A9AAF;
-  list-style: none;
-  display: inline-block;
-}
-
-.menu-nav > ul > li > a:hover {
-  font-weight: bold;
-  text-decoration: underline overline;
-  text-underline-offset: 6px;
-  text-decoration-thickness: 2px;
-
-}
-
-.sub-menu {
-  display: none;
-}
-.menu-item:hover .sub-menu {
-  display: block;
-}
-
-
 /*=======================================
 
   Footer Styling
@@ -196,19 +240,21 @@ left: 715px;
 <script src="https://kit.fontawesome.com/47b21c5749.js" crossorigin="anonymous"></script>
 
 <header>
-  <nav class="menu">
-  <h1><a href="index.html">Priscilla King</a></h1>
-  <div class="menu-nav">
-      <ul>
-        <li class="menu-item"><a href="index.html">Home</a></li>
-        <li class="menu-item"><a href="#">Gallery</a></li>
-          <ul class="sub-menu">
-            <li class="menu-item"><a href="gallery/art.html">2012-2020</a></li>
-            <li class="menu-item"><a href="gallery/show.html">Nostalgia</a></li>
-          </ul>
-        <li class="menu-item"><a href="about.html">Behind the Art</a></li>
-        <li class="menu-item"><a href="contact.html">Contact</a></li>
-      </ul>
+  <nav class="navbar">
+    <a id="logo" href="../index.html">Priscilla King</a>
+    <div class="menu">
+      <a href="../contact.html">Contact</a>
+      <a href="../about.html">Behind the Art</a>
+      <div class="dropdown">
+        <button class="dropbtn">Gallery
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../gallery/art.html">2012-2021</a>
+          <a href="../gallery/show.html">Nostalgia</a>
+        </div>
+      </div>
+       <a href="../index.html">Home</a>
     </div>
   </nav>
 </header>
