@@ -182,6 +182,25 @@ html{
 
 /*=======================================
 
+  Art Page Styling
+
+========================================*/
+
+.main-gallery {
+    text-align: center;
+}
+
+.main-gallery h1 {
+  font-size: 64px;
+  font-weight: lighter;
+}
+
+.row {
+  position: relative;
+}
+
+/*=======================================
+
   Show Page Styling
 
 ========================================*/
@@ -234,6 +253,7 @@ html{
     font-size: 60px;
     margin-top: 75px;
     text-align: center;
+    font-weight: lighter;
 }
 
 .about p {
@@ -306,6 +326,7 @@ html{
   color: #8A9AAF;
   text-align: center;
   padding: 0px 0px 20px 0px;
+  font-weight: lighter;
 }
 
 input[type=text], input[type=email] {
