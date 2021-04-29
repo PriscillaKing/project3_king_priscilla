@@ -148,13 +148,24 @@ html{
     font-weight: 400;
     padding: 0px 25px;
     color: #708198;
+    transition: .3s;
 }
 
 .fa, .fas {
     font-weight: 900;
     color: #708198;
+    transition: .3s;
 }
 
+.fab:hover, .far:hover {
+  color: #B3BECB;
+  transition: .3s;
+}
+
+.fa:hover, .fas:hover {
+  color: #B3BECB;
+  transition: .3s;
+}
 
 /*=======================================
 
@@ -212,6 +223,7 @@ html{
   position: relative;
   display: block;
   padding:5px 0px;
+  transition: .2s;
 }
 
 .column-l {
@@ -227,7 +239,10 @@ html{
   right: 68px;
 }
 
-
+.column-l img:hover, .column-c img:hover, .column-r img:hover {
+  filter: grayscale(100%);
+  transition: .2s;
+}
 /*=======================================
 
   Light Box Styling
@@ -355,12 +370,12 @@ html{
 }
 
 .about h1 {
-    font-family: 'Caveat', cursive;
-    color: #8A9AAF;
-    font-size: 60px;
-    margin-top: 75px;
-    text-align: center;
-    font-weight: lighter;
+  font-family: 'Caveat', cursive;
+  color: #8A9AAF;
+  font-size: 60px;
+  margin-top: 75px;
+  text-align: center;
+  font-weight: lighter;
 }
 
 .about p {
@@ -475,19 +490,19 @@ textarea:focus {
 }
 
 .submit input {
-    background: #8A9AAF;
-    color: rgb(255,255,255, 0.65);
-    font-family: Montserrat semibold, sans-serif;
-    padding: 5px 100px;
-    border-radius: 45px;
-    font-size: 24px;
-    text-transform: uppercase;
-    width: 100%;
-    transition: .3s;
+  background: #8A9AAF;
+  color: rgb(255,255,255, 0.65);
+  font-family: Montserrat semibold, sans-serif;
+  padding: 5px 100px;
+  border-radius: 45px;
+  font-size: 24px;
+  text-transform: uppercase;
+  width: 100%;
+  transition: .3s;
 }
 
 .submit {
-margin: 20px 0px;
+  margin: 20px 0px;
 }
 
 .submit input:hover {
@@ -498,16 +513,16 @@ margin: 20px 0px;
 }
 
 .reset input {
-    background: #B3BECB;
-    color: white;
-    font-family: Montserrat semibold, sans-serif;
-    padding: 5px;
-    border-radius: 45px;
-    font-size: 12px;
-    text-transform: uppercase;
-    width: 25%;
-    position: relative;
-    float: right;
+  background: #B3BECB;
+  color: white;
+  font-family: Montserrat semibold, sans-serif;
+  padding: 5px;
+  border-radius: 45px;
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 25%;
+  position: relative;
+  float: right;
 }
 
 .reset input:hover {
