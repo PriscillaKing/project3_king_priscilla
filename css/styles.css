@@ -497,6 +497,23 @@ margin: 20px 0px;
   cursor: pointer;
 }
 
+.reset input {
+    background: #B3BECB;
+    color: white;
+    font-family: Montserrat semibold, sans-serif;
+    padding: 5px;
+    border-radius: 45px;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 25%;
+    position: relative;
+    float: right;
+}
+
+.reset input:hover {
+  cursor: pointer;
+}
+
 /*=======================================
 
   Dropdown Menu Animation
