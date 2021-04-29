@@ -120,6 +120,11 @@ html{
   left: 100px;
 }
 
+#nav_sig {
+  left: 390px;
+  position: absolute;
+  top: 60px;
+}
 
 /*=======================================
 

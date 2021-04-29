@@ -116,6 +116,11 @@ html{
   left: 100px;
 }
 
+#nav_sig {
+  left: 390px;
+  position: absolute;
+  top: 60px;
+}
 /*=======================================
 
   Dropdown Menu Animation
@@ -248,6 +253,7 @@ html{
 <header>
   <nav class="navbar">
     <a id="logo" href="../index.html">Priscilla King</a>
+    <img id="nav_sig" src="../images/signature_w.png" alt="PK" height="25">
     <div class="menu">
       <a href="../contact.html">Contact</a>
       <a href="../about.html">Behind the Art</a>
