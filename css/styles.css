@@ -427,6 +427,56 @@ html{
   text-align: right;
 }
 
+.commissions {
+  position: absolute;
+  background: #434548;
+  width: 100%;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  top: 725px;
+  height: 280px;
+  margin: 50px auto;
+  padding: 25px;
+  line-height: 2;
+  padding: 25px;
+  text-align: center;
+}
+
+.commissions h2 {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.commissions p {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.commissions > ul {
+  padding-top: 15px;
+  display: inline-block;
+  text-align: justify;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+#right_list {
+  text-align: right;
+  font-variant: normal;
+  font-weight: normal;
+}
+
+.commissions > ul > li {
+  list-style: none;
+  padding: 0px 40px;
+  }
+  .commissions > ul > li > span {
+  font-size: 12px;
+  font-variant: normal;
+  font-weight: normal;
+  }
+
 
 /*=======================================
 
