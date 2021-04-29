@@ -163,7 +163,7 @@ html{
 ========================================*/
 
 .triptych {
-  max-block-size: 595px;
+  max-height: 595px;
   padding: 25px 50px 18px;
 }
 
@@ -464,7 +464,7 @@ textarea:focus {
 
 #name , #email, #message{
   font-size: 18px;
-  font-family: Montserrat light, sans-serif;
+  font-family: Montserrat, sans-serif;
   color: #434548;
   padding: 5px 15px;
 }

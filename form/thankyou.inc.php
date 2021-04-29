@@ -189,6 +189,7 @@ html{
 .container h1 {
   font-size: 64px;
   padding-bottom: 25px;
+  font-weight: normal;
 }
 
 .container p {
@@ -204,7 +205,12 @@ html{
 
 </style>
 
+<!--Icons-->
 <script src="https://kit.fontawesome.com/47b21c5749.js" crossorigin="anonymous"></script>
+
+<!--Favicon-->
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+<link rel="manifest" href="/site.webmanifest">
 
 
 <header>
