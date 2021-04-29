@@ -248,30 +248,89 @@ html{
 
 ========================================*/
 
-.show_intro {
+#show_hero {
   position: relative;
   display: inline-block;
+  min-width: 50%;
+  margin: 25px 65px 0px 65px;
 }
 
-#show_hero {
-  max-width: 100%;
-  height: auto;
-
+#show_hero_cap {
+  margin: 0px 65px;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #434548;
+  font-variant: small-caps;
 }
 
+#show_hero_cap::first-line {
+  font-size: 16px;
+}
+
+.show_intro {
+  position: absolute;
+  max-width: 490px;
+  top: 385px;
+  left: 55%;
+  margin-left: 100px;
+
+}
 
 .show_intro p {
-  margin: 35px 99px;
   line-height: 2;
 }
 
 .show_intro h1 {
   text-align: center;
+  font-size: 64px;
+  margin-bottom: 50px;
+  font-weight: lighter;
 }
 
-.show_images > ul > li:nth-child(odd) {
+.show_gallery {
   position: relative;
-  left: 500px;
+  display: block;
+  text-align: center;
+}
+
+.show_gallery figure {
+  margin: 100px 0px;
+  line-height: 1.8;
+  color: #434548;
+}
+
+.show_gallery > figure > figcaption::first-line{
+  font-variant: small-caps;
+  font-size: 18px;
+}
+
+
+.show_card {
+  background: #B3BECB;
+  padding: 25px;
+  max-width: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 60px;
+}
+
+.show_card_info {
+  color: white;
+  display: inline-block;
+  margin: 0px 25px;
+  line-height: 2;
+}
+
+.show_card_info h2 {
+  font-size: 36px;
+  font-weight: bolder;
+  font-variant: small-caps;
+  line-height: 3;
+}
+
+.show_card_info img {
+  margin: 15px 0px 0px 80px;
 }
 
 /*=======================================
